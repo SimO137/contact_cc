@@ -1,0 +1,205 @@
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b7eff;
+    outline: 1px solid #1b7eff;
+    border-radius: 20px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+
+#MainSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e0dc;
+}
+
+#ContactSection {
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 80px 1fr 40px;
+    background-color: #fdf5ee;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px #888888;
+}
+
+#NavBar {
+    position: relative;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h3 {
+    color: #5b5956;
+}
+
+h3 span {
+    color: #1b7eff;
+}
+
+#Search,
+.DeleteButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b7eff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Search {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#SearchSection {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 50%;
+}
+
+#SearchSection input {
+    width: 100%;
+    border: 1px solid #1b7eff;
+    border-radius: 5px;
+    height: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#ContactList {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+}
+
+#Form {
+    padding: 80px 35px;
+    row-gap: 40px;
+    display: grid;
+    grid-template-rows: repeat(3, fr);
+    overflow: hidden;
+}
+
+#Form div {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 50px;
+    border: #1b7eff 3px solid;
+    border-radius: 15px;
+}
+
+
+#ContactList>p {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#List {
+    row-gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Contact {
+    margin-bottom: 10px;
+    padding: 0px 15px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 2fr repeat(2, 1fr) auto;
+    background-color: #eae5e1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.Contact div {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ContactIcon {
+    margin: 0px;
+    padding: 0px;
+}
+
+#EmptyDiv {
+    text-align: center;
+    font-style: oblique;
+}
+
+#Buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#Buttons #AddButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #83b6f8;
+    border: none;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    color: rgb(120, 69, 165);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.FullName,
+.Phone .city {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#Buttons .SortButtons {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #1b7eff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 20px;
+}
