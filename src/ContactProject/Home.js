@@ -75,7 +75,7 @@ function Home() {
                         </div>
                         <div id="Buttons">
                             <button className='SortButtons' onClick={() => dispatch({ Type: "OrderAsc" })}>
-                            Trier et Actualiser
+                                Trier et Actualiser
                             </button>
                             <button id='AddButton' onClick={() => { setToggle(true) }}>
                                 <span className="material-symbols-outlined">
